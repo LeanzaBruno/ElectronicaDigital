@@ -1,0 +1,21 @@
+1) Qué es un sistema digital combinacional? Para qué sirve? Qué parte de un algoritmo puede implementar?
+
+Un sistema combinacional es un sistema digital en el cual sus salidas son función de sus entradas.
+
+------------------------------------------
+
+2) A qué se denomina lógica de tres estados?
+
+Lógica de tres estados(TRI-STATE)
+El desarrollo de la organización bus en computadoras llevo al desarrollo del circuito lógico de tres estados.
+
+Este equipo llamado TRI STATE tiene una tercera condición de salida llamada alta impedancia o estado Z alto. Las otras dos son la normal alta(HIGH) y la baja(LOW) de voltaje.
+
+Cuando esta tercera entrada esta activada(enabled=1) este actúa como un circuito abierto impidiendo el paso de la señal.
+
+Cuando esta tercera entrada está desactivada(enabled=0) este actúa como un circuito cerrado permitiendo el paso de la señal.
+
+
+-------------------------------
+
+3) Expliqu
