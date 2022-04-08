@@ -12,6 +12,12 @@ end;
 
 architecture behave of Detector is
   --declaraciones
+  signal miniterm_1, miniterm_2, miniterm_3, miniterm_4 : std_logic;
+  
   begin
-    paridad <= ( par and (not A) and B ) or ( par and A and (not B) ) or ( (not par) and (not A) and (not b) ) or ( (not par) and A and B );
+    miniterm_1 <= par and (not A) and B;
+    miniterm_2 <= par and A and (not B);
+    miniterm_3 <= (not par) and (not A) and (not b);
+    miniterm_4 <= (not par) and A and B;
+    paridad <= miniterm_1 or miniterm_2 or miniterm_3 or miniterm_4;
 end;
