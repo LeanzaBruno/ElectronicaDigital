@@ -1,0 +1,33 @@
+library ieee;
+use ieee.use_std_1164.all;
+
+
+--Es un simple detector de paridad par con 2 bits
+entity simulator is
+end entity;
+
+
+architecture arch_simulator of simulator is
+
+  --Llamada a la entidad bajo testeo
+  component detector
+    port(
+      i_0, i_1 : in std_logic,
+      output : out std_logic
+    );
+  end entity;
+
+  --Declaración de señales
+  signal i_0, i_1, output : std_logic;
+  
+  begin
+    uut : detector port map(i_0, i_1, output);
+
+    process
+      begin
+        i_0 <= '0'; i_1 <= '0';
+        i_0 <= '0'; i_1 <= '1';
+        i_0 <= '1'; i_1 <= '0';
+        i_0 <= '1'; i_1 <= '1';
+        end process;
+end architecture;

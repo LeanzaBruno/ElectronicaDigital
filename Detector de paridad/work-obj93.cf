@@ -1,0 +1,7 @@
+v 4
+file . "detector.vhd" "5a2327f1142cb716f5064823babe4555efce03b6" "20220408151833.463":
+  entity detector at 1( 0) + 0 on 27;
+  architecture behave of detector at 13( 263) + 0 on 28;
+file . "detector_tb.vhd" "3093ea041f5e63e58971bee302b2c0ea7aaa616a" "20220408151821.406":
+  entity simulator at 1( 0) + 0 on 25;
+  architecture behave of simulator at 8( 78) + 0 on 26;

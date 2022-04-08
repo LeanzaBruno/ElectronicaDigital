@@ -1,16 +1,17 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
---Es un simple detector de paridad par con 2 bits
-entity detector is
+--es un detector de paridad de 2 bits. Puede detectar paridad par e impar.
+--par = 1 -> paridad par ; par = 0 -> paridad impar.
+entity Detector is
   port(
-    i_0, i_1 : in std_logic;
-    output : out std_logic);
+    a, b, par : std_logic;
+    paridad : out std_logic);
 end;
 
 
-architecture detector_arch of detector is
+architecture behave of Detector is
   --declaraciones
   begin
-    output <= (i_0 and not i_1) or (not i_0 and i_1);
+    paridad <= ( par and (not A) and B ) or ( par and A and (not B) ) or ( (not par) and (not A) and (not b) ) or ( (not par) and A and B );
 end;
