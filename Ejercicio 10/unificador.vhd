@@ -1,7 +1,10 @@
+--Esta unidad hace uso de los 3 submodulos de deteccion
+--1) el detector par
+--2) el detector de triples
+--3) el detector de números primos
+
 library ieee;
 use ieee.std_logic_1164.all;
-
-
 
 entity Unificador is
   port(

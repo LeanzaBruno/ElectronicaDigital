@@ -1,5 +1,3 @@
---
-
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -7,7 +5,6 @@ entity UnificadorSimulator is
 end;
 
 architecture simulation of UnificadorSimulator is
-
   
   component Unificador
     port(
@@ -20,10 +17,12 @@ architecture simulation of UnificadorSimulator is
   --'b' es la cadena de bits de entrada
   signal b : std_logic_vector(4 downto 0);
   signal pair_output, prime_output, triple_output : std_logic;
-  begin
-  uut : Unificador port map(b, pair_output, prime_output, triple_output);
   
-  process
+  begin
+    
+    uut : Unificador port map(b, pair_output, prime_output, triple_output);
+  
+    process
     begin
     --0
     b(4) <= '0';
