@@ -8,7 +8,7 @@ architecture simulation of UnificadorSimulator is
   
   component Unificador
     port(
-      binary_number : in std_logic_vector(4 downto 0);
+      number : in std_logic_vector(4 downto 0);
       is_pair, is_prime, is_triple : out std_logic
     );
   end component;
